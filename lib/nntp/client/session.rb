@@ -19,7 +19,7 @@ module NNTP
       end
 
       def group(group_title)
-        group = NNTP::Group.new(self)
+        group = NNTP::Client::Group.new(self)
         group.title = group_title
         group
       end
