@@ -4,7 +4,11 @@ module NNTP
       def initialize(nntp)
         @nntp = nntp
         @fetched = false
+        @post_id = nil
+      end
 
+      def post_id
+        @post_id
       end
 
       def post_id=(post_id)
