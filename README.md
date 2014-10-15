@@ -18,10 +18,10 @@ Or install it yourself as:
 
 ## Usage
 
-NNTP::Client provides a simple API for retrieving newsgroups and posts from a NNTP-Server
+NNTP::Client::Session provides a simple API for retrieving newsgroups and posts from a NNTP-Server
 
 ```ruby
-NNTP::Client.start("some.nntp.host") do |nntp|
+NNTP::Client::Session.start("some.nntp.host") do |nntp|
   # Fetch all newsgroups
   nntp.newsgroups
 
